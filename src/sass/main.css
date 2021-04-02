@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  color: var(--main-light-text);
+  font-family: var(--primary-font-family);
+  font-size: 18px;
+  line-height: 1.555;
+  letter-spacing: 0.08em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+  --black-color: rgba(17, 21, 24, 1);
+  --orange-color: rgba(255, 107, 9, 1);
+  --white-color: rgba(255, 255, 255, 1);
+  --main-light-text: rgba(185, 185, 185, 1);
+  --main-dark-text: rgba(61, 61, 61, 1);
+  --grey-section: rgba(241, 241, 241, 1);
+  --primary-font-family: 'Montserrat', sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*# sourceMappingURL=main.css.map */
