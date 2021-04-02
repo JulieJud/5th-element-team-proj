@@ -14,4 +14,112 @@
     padding-top: 125px;
     padding-bottom: 144.5px;
   }
+
+  &__title {
+    @media screen and(max-width: 767px) {
+      font-size: 20px;
+      line-height: 136%;
+      margin-bottom: 30px;
+    }
+
+    @media screen and(min-width: 768px) {
+      font-size: 26px;
+      margin-bottom: 30px;
+      width: 320px;
+    }
+
+    @media screen and(min-width: 1280px) {
+      font-size: 58px;
+      line-height: 130%;
+      margin-bottom: 24px;
+      width: 642px;
+    }
+
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 130%;
+
+    letter-spacing: 0.03em;
+
+    color: var(--black-color);
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 22px;
+
+    letter-spacing: 0.08em;
+  }
+
+  &__text1 {
+    font-weight: 500;
+    letter-spacing: 0.08em;
+
+    color: #b9b9b9;
+    @media screen and(min-width: 1280px) {
+      font-size: 20px;
+      line-height: 164.9%;
+    }
+  }
+
+  &__text2 {
+    font-weight: bold;
+    color: #111518;
+    @media screen and(min-width: 1280px) {
+      font-size: 20px;
+      line-height: 164.9%;
+    }
+  }
+
+  &__text3 {
+    font-weight: bold;
+    color: #ff6b09;
+    margin-bottom: 30px;
+    @media screen and(min-width: 1280px) {
+      font-size: 20px;
+      line-height: 164.9%;
+      margin-left: 4px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__textbox {
+    @media screen and(min-width: 1280px) {
+      display: flex;
+    }
+  }
+
+  &__button {
+    @media screen and(max-width: 767px) {
+      width: 260px;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background-color: #ff6b09;
+      color: #ffffff;
+      padding: 14px 1px;
+      border: none;
+      margin-left: 10px;
+    }
+    @media screen and(min-width: 768px) {
+      width: 259px;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background-color: #ff6b09;
+      color: #ffffff;
+      padding: 14px 1px;
+      border: none;
+    }
+    @media screen and(min-width: 1280px) {
+      width: 354px;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.14em;
+    }
+  }
 }
