@@ -46,6 +46,26 @@
 }
 }
 
+.do-meta {
+
+    &__name {
+        font-weight: 800;
+        color: var(--black-color);
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 1.4;
+        text-align: center;
+        letter-spacing: 0.08em;
+
+        @media screen and (min-width:768px) {
+            font-size: 14px;
+            
+        }
+    }  
+    
+}
+
 .do-title {
     font-weight: 800;
     color: var(--black-color);
@@ -64,4 +84,12 @@
     font-size: 46px;
     margin-bottom: 50px;
 }   
+}
+
+
+.section-do__svg {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
