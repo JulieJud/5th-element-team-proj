@@ -135,8 +135,8 @@
     }
 
     @media screen and(min-width: 1280px) {
-      width: 841.55px;
-      height: 602.24px;
+      width: 673.24px;
+      height: 481.79px;
     }
   }
 
@@ -148,6 +148,7 @@
     }
     @media screen and(min-width: 768px) {
       position: absolute;
+      z-index: 3;
       top: 0;
       left: 0;
       transform: translate(100%, 30%);
@@ -155,14 +156,15 @@
       height: 320.64px;
     }
     @media screen and(min-width: 1280px) {
-      transform: translate(70%, 10%);
-      width: 841.55px;
-      height: 718.14px;
+      transform: translate(87%, 18%);
+      width: 673.24px;
+      height: 574.51px;
     }
   }
 
   &__picture {
     position: absolute;
+    z-index: 2;
     top: 0;
     left: 0;
     transform: translate(12%, -5%);
@@ -177,8 +179,25 @@
       height: 320.64px;
     }
     @media screen and(min-width: 1280px) {
-      width: 719.17px;
-      height: 718.14px;
+      width: 575.34px;
+      height: 574.51px;
     }
   }
+}
+
+// .hero__wave {
+//   @media screen and(min-width: 1280px) {
+//     width: 100%;
+//     box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+//   }
+// }
+
+.hero__wave {
+  display: inline-block;
+  width: 100%;
+  // position: absolute;
+  background-image: url(../images/svg/wave-desktop.svg);
+  background-repeat: no-repeat;
+  // background-color: aqua;
+  box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
 }
