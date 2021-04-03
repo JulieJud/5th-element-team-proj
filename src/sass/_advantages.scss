@@ -1,1 +1,106 @@
+.advantages {
+  @media screen and(max-width: 767px) {
+    padding-top: 30px;
+    margin-left: 36px;
+    padding-bottom: 49.5px;
+  }
 
+  @media screen and(min-width: 768px) {
+    padding-bottom: 50px;
+  }
+
+  @media screen and(min-width: 1280px) {
+    padding-top: 96.5px;
+    padding-bottom: 300px;
+  }
+
+  &__item {
+    position: relative;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    color: #111518;
+    @media screen and(max-width: 767px) {
+      width: 146px;
+      font-size: 14px;
+      margin-left: 68.82px;
+      margin-bottom: 30px;
+    }
+    @media screen and(min-width: 768px) {
+      // flex-basis: calc(100% / 3 - 42px);
+      margin-left: 89.82px;
+    }
+    @media screen and(min-width: 1280px) {
+      font-size: 20px;
+      line-height: 164.9%;
+      // width: 448px;
+      margin-left: 82px;
+      flex-basis: calc(100% / 3);
+    }
+  }
+
+  &__item1::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -68.82px;
+    transform: translateY(-50%);
+    display: inline-block;
+    background-image: url(/images/svg/man-mobile.svg);
+    width: 61px;
+    height: 62px;
+    @media screen and(min-width: 1280px) {
+      background-image: url(/images/svg/man-desktop.svg);
+      width: 101px;
+      height: 104px;
+      left: -85px;
+    }
+  }
+
+  &__item2::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -68.82px;
+    transform: translateY(-50%);
+    display: inline-block;
+    background-image: url(/images/svg/study-mobile.svg);
+    width: 61px;
+    height: 62px;
+    @media screen and(min-width: 1280px) {
+      background-image: url(/images/svg/stydy-desktop.svg);
+      width: 101px;
+      height: 104px;
+      left: -85px;
+    }
+  }
+
+  &__item3::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -68.82px;
+    transform: translateY(-50%);
+    display: inline-block;
+    background-image: url(/images/svg/dollar-mobile.svg);
+    width: 61px;
+    height: 62px;
+    @media screen and(min-width: 1280px) {
+      background-image: url(/images/svg/dollar-desktop.svg);
+      width: 101px;
+      height: 104px;
+      left: -85px;
+    }
+  }
+
+  &__list {
+    @media screen and(min-width: 768px) {
+      display: flex;
+      margin-left: -21px;
+    }
+
+    @media screen and(min-width: 1280px) {
+      margin-left: 0;
+    }
+  }
+}
