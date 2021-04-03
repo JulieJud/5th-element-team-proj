@@ -18,7 +18,7 @@
 
   &:hover,
   &:focus {
-    fill: var(--accent-color);
+    fill: var(--orange-color);
   }
 
   @media (min-width: 1280px) {
@@ -26,8 +26,56 @@
   }
 }
 
-.page-header__consultation {
+.header-menu {
+  @media (max-width: 1280px) {
+    display: none;
+  }
+}
+
+.header__consultation {
+  width: 260px;
+  height: 48px;
+  border-color: var(--orange-color);
+  color: var(--orange-color);
+  background-color: var(--white-color);
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.363;
+
   @media (max-width: 767px) {
     display: none;
   }
+}
+
+.header__logo {
+  display: block;
+  text-decoration: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.header__text {
+  color: var(--black-color);
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.23;
+
+  &--little {
+    color: var(--black-color);
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 1.25;
+    text-transform: uppercase;
+  }
+
+  &--little-orange {
+    color: var(--orange-color);
+  }
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
