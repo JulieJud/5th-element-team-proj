@@ -185,19 +185,14 @@
   }
 }
 
-// .hero__wave {
-//   @media screen and(min-width: 1280px) {
-//     width: 100%;
-//     box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
-//   }
-// }
-
 .hero__wave {
   display: inline-block;
   width: 100%;
-  // position: absolute;
-  background-image: url(../images/svg/wave-desktop.svg);
+  background-size: cover;
+
+  background-image: url(../images/volna.png);
   background-repeat: no-repeat;
-  // background-color: aqua;
-  box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/Volna@2x.png);
+  }
 }
