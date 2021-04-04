@@ -127,6 +127,11 @@
     }
   }
 
+  &__btnbox:hover,
+  &__btnbox:focus {
+    transform: scale(1.1);
+  }
+
   &__background {
     @media screen and(max-width: 767px) {
       width: 208px;
