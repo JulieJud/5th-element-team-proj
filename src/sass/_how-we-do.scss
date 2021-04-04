@@ -12,7 +12,9 @@
 
 
     &__item {
+        margin-bottom: 15px;
         box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         
         
         @media screen and (min-width:768px) {
@@ -28,6 +30,8 @@
     }
     }
 
+   
+
 }
 
 .do-meta {
@@ -35,6 +39,7 @@
     padding-left: 30px;
 
     &__name {
+        position: relative;
         font-weight: 800;
         color: var(--black-color);
         font-style: normal;
@@ -43,12 +48,14 @@
         line-height: 1.4;
         text-align: center;
         letter-spacing: 0.08em;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
        
 
         @media screen and (min-width:1280px) {
             font-size: 20px;
             
         }
+      
     }  
 
     &__text {
@@ -58,8 +65,9 @@
         text-align: center;
         letter-spacing: 0.08em;
         color: var(--main-light-text);
-        margin-top: 32px;
-        margin-bottom: 55px;
+        padding-top: 32px;
+        padding-bottom: 55px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         @media screen and (min-width:1280px) {
         font-size: 18px;
@@ -67,9 +75,21 @@
 
         }
     }
-
-    
 }
+
+.do-meta__name::after {
+    position: absolute;
+    top: 120%;
+    left: 54%;
+    transform: translate(-125%, 200%);
+
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: var(--orange-color);
+    }  
+
 
 .do-title {
     font-weight: 800;
@@ -92,9 +112,38 @@
 }
 
 
+
 .section-do__svg {
     display: flex;
     justify-content: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    fill: var(--orange-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+.section-do__item:hover,
+.section-do__item:focus  {
+    background-color: var(--orange-color);
+    
+
+
+   & .section-do__svg {
+    fill: var(--white-color);
+}
+
+   & .do-meta__name {
+    color: var(--white-color);
+   } 
+
+    & .do-meta__text {
+    color: var(--white-color);
+}
+ & .do-meta__name::after {
+    background-color: var(--white-color);
+ }
+}
+
+
+
