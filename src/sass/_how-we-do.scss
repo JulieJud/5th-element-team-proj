@@ -12,7 +12,9 @@
 
 
     &__item {
+        margin-bottom: 15px;
         box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         
         
         @media screen and (min-width:768px) {
@@ -46,6 +48,7 @@
         line-height: 1.4;
         text-align: center;
         letter-spacing: 0.08em;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
        
 
         @media screen and (min-width:1280px) {
@@ -70,8 +73,9 @@
         text-align: center;
         letter-spacing: 0.08em;
         color: var(--main-light-text);
-        margin-top: 32px;
-        margin-bottom: 55px;
+        padding-top: 32px;
+        padding-bottom: 55px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         @media screen and (min-width:1280px) {
         font-size: 18px;
@@ -110,18 +114,14 @@
     padding-top: 30px;
     padding-bottom: 30px;
     fill: var(--orange-color);
-
-    // &:hover ,
-    // &:focus {
-    //     fill: var(--white-color);
-        
-    // }
-
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-.section-do__item:hover  {
+.section-do__item:hover,
+.section-do__item:focus  {
     background-color: var(--orange-color);
+    
 
 
    & .section-do__svg {
