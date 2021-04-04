@@ -1,3 +1,163 @@
-.red {
-  color: red;
+.about {
+  background-color: var(--white-color);
+
+  @media screen and (max-width: 767px) {
+   padding-top: 270px;
+   padding-bottom: 50px;
+  } 
+
+  @media screen and (min-width: 768px) {
+    padding-top: 303px;
+    padding-bottom: 50px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 330px;
+    padding-bottom: 130px;
+  }
+}
+
+.about-title {
+  color: var(--black-color);
+
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+
+  @media screen and (max-width: 767px) {    
+    font-size: 20px;
+    line-height: 26px;
+    
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: 130%;
+
+    margin-left: 40px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {   
+    font-size: 46px;
+    line-height: 130%;
+
+    margin-left: 180px;
+    margin-bottom: 50px;
+  }
+
+}
+
+.about__images {
+
+  @media screen and (max-width: 767px) {
+    margin-left: 5px;
+
+    width: 243px;
+    
+  }
+
+}
+
+.about-name {
+  color: var(--black-color);
+
+  @media screen and (max-width: 767px) {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+
+  margin-top: 20px;
+  // margin-bottom: 10px;
+  margin-left: 5px;
+
+  }
+}
+
+.about-name:after {
+  @media screen and (max-width: 767px) {
+  content: "";
+  display: block; 
+  height: 1px;
+  background-color: var(--grey-section);
+  border-radius: 1px;
+
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 35px;
+  margin-bottom: 20px;;
+}
+}
+
+
+.about-experience__text {
+  color: var(--black-color);
+
+  @media screen and (max-width: 767px) {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+
+  margin-left: 47px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+
+  display: inline-flex;
+
+  position: relative;
+  }
+}
+
+.about-experience__text:before {
+  @media screen and (max-width: 767px) {
+    content: "";
+    background-image: url(../images/svg/sign.svg);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+  
+    margin-right: 9px;
+    padding-left: 0;
+
+    position: absolute;
+    right: 100%;
+  }
+}
+
+.about-education__text {
+  color: var(--main-light-text);
+
+  @media screen and (max-width: 767px) {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+
+    margin-left: 21px;
+    margin-right: 20px;
+  }
+
+}
+
+.about__link {
+ color: var(--orange-color);
+
+ @media screen and (max-width: 767px) {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+
+  text-decoration-line: underline;
+
+  margin-left: 21px;
+ }
+
+
 }
