@@ -95,6 +95,11 @@
   }
 
   &__list {
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: backInRight;
+    animation-duration: 2s;
     padding-inline-start: 0;
     @media screen and(min-width: 768px) {
       display: flex;
