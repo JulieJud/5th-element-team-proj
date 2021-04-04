@@ -19,19 +19,12 @@
 }
 
 .reviews {
-  padding: 50px 20px;
-
-  @media screen and (min-width: 768px) {
-    padding: 50px 27px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    padding: 130px 211px;
-  }
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .reviews__card {
-  position: relative;
   margin-bottom: 20px;
   text-align: center;
   padding: 20px 20px 30px 20px;
@@ -46,8 +39,7 @@
 
   @media screen and (min-width: 1280px) {
     display: flex;
-    min-width: 1090px;
-    width: 100%;
+    width: 1090px;
     margin-bottom: 40px;
     padding-top: 50px;
     padding-bottom: 51px;
@@ -72,6 +64,7 @@
 
   @media screen and (min-width: 768px) {
     height: 100%;
+    max-width: 150px;
   }
 }
 
@@ -85,13 +78,11 @@
   font-weight: 800;
   font-size: 14px;
   line-height: 1.21;
-  letter-spacing: 0.08em;
-  color: #FF6B09;
+  
+  color: var(--orange-color); 
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 20px;    
-    font-size: 20px;
-    line-height: 1.2;
+    margin-bottom: 20px;   
     text-align: start;
   }
 
@@ -107,9 +98,8 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.25;
-  letter-spacing: 0.08em; 
-
-  color: #B9B9B9;
+  
+  color: var(--main-light-text); 
 
   @media screen and (min-width: 768px) {
     margin-bottom: 20px;
@@ -127,7 +117,7 @@
   font-size: 12px;
   line-height: 1.67;
 
-  color: #3D3D3D;
+  color: var(--main-dark-text); 
 
   @media screen and (min-width: 768px) {
     text-align: start;
@@ -145,7 +135,7 @@
   line-height: 1.67;
 
   text-decoration-line: underline; 
-  color: #FF6B09;
+  color: var(--orange-color);
 
   @media screen and (min-width: 1280px) {
     font-size: 18px;
@@ -160,6 +150,7 @@
 .reviews-button {
   background-color: transparent;
   border: transparent;
+  outline: 1px solid red;
 
   &--hide {
     @media screen and (max-width: 768px) { 
@@ -174,27 +165,28 @@
 
 .reviews-button__prev {
   position: absolute;
-  top: 37%;
+  top: 50%;
   left: 2.5%;
 
   @media screen and (min-width: 1280px) {
-    top: 50%;
+    
   }
 }
 
 .reviews-button__next {
   position: absolute;
-  top: 37%;
-  left: 92%;
+  top: 50%;
+  left: 94%;
 
   @media screen and (min-width: 1280px) {
-    top: 50%;
+   
   }
 }
 
 .reviewers-group__button {  
   background-color: transparent;
   border: transparent;
+  outline: 1px solid blue;
 }
 
 .reviewers-group {
@@ -205,9 +197,13 @@
     display: none;
   }  
 }
+ul {
+  padding: 0;
+}
 
 .reviewers-view {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 
   @media screen and (max-width: 767px) {
     display: none;
