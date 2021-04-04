@@ -104,20 +104,26 @@
     text-transform: uppercase;
     background-color: var(--orange-color);
     color: var(--white-color);
-    padding: 14px 1px;
+
     border: none;
+    text-decoration: none;
+
+    text-align: center;
 
     @media screen and(max-width: 767px) {
       width: 260px;
+      padding: 14px 4px;
     }
     @media screen and(min-width: 768px) {
       width: 259px;
+      padding: 10px 14px;
     }
     @media screen and(min-width: 1280px) {
       width: 354px;
       font-size: 14px;
       line-height: 1.21;
       letter-spacing: 0.14em;
+      padding: 26px 27px;
     }
   }
 
