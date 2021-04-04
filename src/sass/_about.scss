@@ -76,22 +76,24 @@
   margin-left: 5px;
 
   }
+
+ &::after {
+    
+    content: "";
+    display: block; 
+    height: 1px;
+    background-color: var(--grey-section);
+    border-radius: 1px;
+  
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 35px;
+    margin-bottom: 20px;
+
+  }
 }
 
-.about-name:after {
-  @media screen and (max-width: 767px) {
-  content: "";
-  display: block; 
-  height: 1px;
-  background-color: var(--grey-section);
-  border-radius: 1px;
 
-  margin-top: 10px;
-  margin-left: 0px;
-  margin-right: 35px;
-  margin-bottom: 20px;;
-}
-}
 
 
 .about-experience__text {
@@ -112,26 +114,28 @@
 
   position: relative;
   }
-}
 
-.about-experience__text:before {
-  @media screen and (max-width: 767px) {
-    content: "";
-    background-image: url(../images/svg/sign.svg);
-    width: 20px;
-    height: 20px;
-    display: inline-block;
+  &::before {
+      content: "";
+      background-image: url(../images/svg/sign.svg);
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+    
+      margin-right: 9px;
+      padding-left: 0;
   
-    margin-right: 9px;
-    padding-left: 0;
+      position: absolute;
+      right: 100%;
 
-    position: absolute;
-    right: 100%;
   }
+
 }
+
 
 .about-education__text {
   color: var(--main-light-text);
+  
 
   @media screen and (max-width: 767px) {
     font-style: normal;
@@ -141,6 +145,19 @@
 
     margin-left: 21px;
     margin-right: 20px;
+    margin-top: 15px;
+  }
+
+  &:first-child:before {
+    content: "";
+    display: block; 
+    height: 3px;
+    background-color: var(--orange-color);
+    border-radius: 3px;
+
+    width: 7%;
+
+    margin-bottom: 10px;
   }
 
 }
@@ -156,7 +173,14 @@
 
   text-decoration-line: underline;
 
+  white-space: nowrap;
+
+  display: block;
   margin-left: 21px;
+  margin-top: 10px;
+  margin-right: 0px;
+
+  
  }
 
 
