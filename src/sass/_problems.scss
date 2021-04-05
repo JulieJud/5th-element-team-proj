@@ -9,9 +9,23 @@
     background-image: linear-gradient(to bottom, #000000 536px, #ffffff 536px, #ffffff 794px);
     padding-top: 100px;
     padding-bottom: 77px;
+    position: relative;
   }
 }
-
+.problems__bg-fire {
+  display: none;
+  position: absolute;
+  bottom: 230px;
+  right: -230px;
+  width: 455px;
+  height: 472px;
+  background-image: url(../images/svg/bg-fire-black.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
+}
 .list-problems {
   counter-reset: number 0;
   width: 100%;
@@ -28,6 +42,10 @@
     padding: 30px 70px;
     // margin-left: calc(-1 * 30px);
     // margin-top: calc(-1 * 30px);
+  }
+  @media screen and (min-width: 1280px) {
+    position: relative;
+    z-index: 999;
   }
 }
 
