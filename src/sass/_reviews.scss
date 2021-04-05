@@ -69,8 +69,15 @@
 }
 
 .reviews__link {
-  display: block;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
   margin-bottom: 20px;
+
+  background-image: url(/images/svg/insta.svg);
+  background-repeat: no-repeat;
+
+  background-size: cover;
 }
 
 .reviewer {
@@ -150,8 +157,7 @@
 .reviews-button {
   background-color: transparent;
   border: transparent;
-  outline: 1px solid red;
-
+  
   &--hide {
     @media screen and (max-width: 768px) { 
       display: none;
@@ -186,7 +192,6 @@
 .reviewers-group__button {  
   background-color: transparent;
   border: transparent;
-  outline: 1px solid blue;
 }
 
 .reviewers-group {
@@ -197,6 +202,7 @@
     display: none;
   }  
 }
+
 ul {
   padding: 0;
 }
