@@ -1,0 +1,105 @@
+.problems {
+  padding: 50px 0;
+  background-image: linear-gradient(to bottom, #000000 460px, #ffffff 460px, #ffffff 654px);
+  background-size: cover;
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to bottom, #000000 350px, #ffffff 350px, #ffffff 550px);
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: linear-gradient(to bottom, #000000 536px, #ffffff 536px, #ffffff 794px);
+    padding-top: 100px;
+    padding-bottom: 77px;
+  }
+}
+
+.list-problems {
+  counter-reset: number 0;
+  width: 100%;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.7;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 70px;
+    // margin-left: calc(-1 * 30px);
+    // margin-top: calc(-1 * 30px);
+  }
+}
+
+.list-problems__item {
+  counter-increment: number;
+  &::before {
+    content: '— 0' counter(number);
+    display: block;
+    color: var(--orange-color);
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.08em;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 20px;
+      line-height: 164.9%;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+.list-problems__text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  @media screen and (min-width: 768px) {
+    line-height: 143%;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.problems__text {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 136%;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  max-width: 350px;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 568px;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 866px;
+    font-size: 46px;
+    margin-bottom: 100px;
+  }
+}
+
+.problems__help {
+  color: var(--orange-color);
+}
