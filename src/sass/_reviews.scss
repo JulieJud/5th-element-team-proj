@@ -24,7 +24,7 @@
   align-items: center;
 
   margin-bottom: 50px;
-
+  
   @media screen and (min-width: 1280px) {
     margin-bottom: 130px;
   }
@@ -34,7 +34,7 @@
   margin-bottom: 20px;
   text-align: center;
   padding: 20px 20px 30px 20px;
-  
+    
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
   @media screen and (min-width: 768px) {
@@ -191,21 +191,23 @@
 
 .reviews-button__prev {
   position: absolute;
-  top: 50%;
-  left: 2.5%;
+  top: 40%;
+  left: -0.7%;
 
   @media screen and (min-width: 1280px) {
-    
+    top: 45%;
+    left: 5%;
   }
 }
 
 .reviews-button__next {
   position: absolute;
-  top: 50%;
-  left: 94%;
+  top: 42%;
+  left: 95%;
 
   @media screen and (min-width: 1280px) {
-   
+    top: 45%;
+    left: 91.5%;
   }
 }
 
