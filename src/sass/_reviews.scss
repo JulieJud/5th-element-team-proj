@@ -22,6 +22,12 @@
   position: relative;
   display: flex;
   align-items: center;
+
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 130px;
+  }
 }
 
 .reviews__card {
@@ -39,16 +45,17 @@
 
   @media screen and (min-width: 1280px) {
     display: flex;
-    width: 1090px;
+    max-width: 1090px;
     margin-bottom: 40px;
-    padding-top: 50px;
-    padding-bottom: 51px;
-    padding-left: 82px;
-    padding-right: 112px;
+    padding: 50px;
   }
 }
 
 .reviews__social {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+
   @media screen and (min-width: 768px) {
     margin-right: 46px;
   }
@@ -58,26 +65,39 @@
   }
 }
 
-.reviews__img {
-  height: 90px;
-  margin-bottom: 20px;  
+.reviews__thumb {
+  @media screen and (min-width: 768px) {
+  height: 150px;
+}
+}
 
+.reviews__img {
+  margin-bottom: 20px;
+  max-width: 90px;
+ 
   @media screen and (min-width: 768px) {
     height: 100%;
-    max-width: 150px;
+    max-width: 150px;    
   }
 }
 
 .reviews__link {
   display: inline-block;
   width: 30px;
-  height: 30px;
-  margin-bottom: 20px;
+  height: 30px;  
 
   background-image: url(/images/svg/insta.svg);
   background-repeat: no-repeat;
 
   background-size: cover;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+  }
 }
 
 .reviewer {
