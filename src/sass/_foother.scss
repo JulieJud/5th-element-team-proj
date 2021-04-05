@@ -1,0 +1,102 @@
+.foter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  min-height: 230px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.adress {
+  @media screen and (min-width: 768px) {
+    margin-left: 39%;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 25%;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.214;
+    color: var(--black-color);
+    text-decoration: none;
+    font-style: normal;
+
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 30px;
+    }
+  }
+
+  &__link::after {
+    @media screen and (min-width: 768px) {
+      content: '';
+      margin-right: 24px;
+      margin-left: 24px;
+      background-image: url(/images/svg/line.svg);
+      background-repeat: no-repeat;
+      width: 2px;
+      height: 40px;
+    }
+  }
+
+  &__svg {
+    margin-right: 10px;
+  }
+}
+
+.instagramm {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+
+  background-image: url(/images/svg/insta.svg);
+  background-repeat: no-repeat;
+
+  background-position: 50%;
+}
+
+.header__logo--nopading {
+  padding: 0;
+}
+
+.copiright {
+  background-color: var(--black-color);
+
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2;
+    color: var(--main-light-text);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
