@@ -1,9 +1,9 @@
 .guarantee {
-  background-color: var(--white-color);
+  background-color: var(--grey-section);
   
 
   @media screen and (max-width: 767px) {
-   padding-top: 0;
+  //  padding-top: 0;
    padding-bottom: 50px;
   } 
 
@@ -72,11 +72,12 @@
 
     &::before {
       content: "";
-      height: 330px;
+      height: 230px;
+      // было 330пиксилей height
       // float: left;
       // margin-top: 30px;
-      left: 0px;
-      outline: dashed 1px;   
+      top: 35px;
+      border-left: dashed 1px;   
       position: absolute;
       left: 19px;
       display: block;
@@ -91,14 +92,13 @@
 
     &::before {
       content: "";
-      height: 200px;
+      height: 180px;
       float: left;
-      // margin-top: 30px;
-      // left: 0px;
-      outline: dashed 1px;   
+      border-left: dashed 1px;   
       position: absolute;
-      left: 90px;
-      // display: block;
+      left: 85px;
+      top: 35px;
+      
     }
   }
   
@@ -110,15 +110,12 @@
 
     &::before {
       content: "";
-      height: 290px;
+      height: 250px;
       float: left;
-      // margin-top: 30px;
-      // left: 0px;
-      outline: dashed 1px;   
+      border-left: dashed 1px;   
       position: absolute;
       left: 70px;
-      top: 70;
-      // display: block;
+      top: 83px;
     }
   }
   
@@ -135,6 +132,7 @@
   line-height: 20px;
   margin-bottom: 18px;
 
+
   &::before {
     content: "";
     background-image: url(../images/svg/fire.svg);
@@ -142,7 +140,7 @@
     height: 30px;
     display: inline-block;
     position: absolute;
-    right: 107%;
+    left: -40px;
   }
 }
 
@@ -157,11 +155,13 @@
     &::before {
       content: "";
       background-image: url(../images/svg/fire.svg);
-      width: 22px;
+      width: 30px;
       height: 30px;
       display: inline-block;
       position: absolute;
       right: 103%;
+      background-repeat: no-repeat;
+      left: -43px;
   
     }
   }
@@ -178,14 +178,39 @@
     content: "";
     background-image: url(../images/svg/fire.svg);
     width: 22px;
-    height: 30px;
+    height: 34px;
     display: inline-block;
     position: absolute;
-    right: 103%;
+    // right: 50%;
+    left: -52px;
 
   }
   }
 }
+
+// .guarantee-list__item:not(:last-child)::before {
+//   @media screen and (max-width: 767px) {
+//     border-left: 1px dashed var(--main-light-text);
+//     content: '';
+//     position: absolute;
+//     top: 35px;
+//     left: 15px;
+//     height: 65%;
+//   }
+// }
+
+// .guarantee-list__item::after {
+//   @media screen and (max-width: 767px) {
+//     content: '';
+//     width: 22px;
+//     height: 30px;
+//     background-image: url(../images/svg/fire.svg);
+//     position: absolute;
+//     left: 6px;
+//     z-index: 999;
+//     // top: 50%;
+//   }
+// }
 
 .guarantee-list__orange {
   color: var(--orange-color);
