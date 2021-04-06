@@ -262,8 +262,10 @@ text-decoration-line: underline;
  @media screen and (max-width: 767px) {
   white-space: nowrap;
 
+  line-height: 13px;
+
   display: block;
-  margin-left: 21px;
+  margin-left: 0px;
   margin-top: 10px;
   margin-right: 0px;
 
