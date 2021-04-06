@@ -3,6 +3,11 @@ ul {
   margin: 0;
 }
 
+.container-benefits {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .benefits {
   padding: 0 0 50px;
   background-image: linear-gradient(to bottom, #111518 367px, #ffffff 367px, #ffffff 609px);
@@ -18,6 +23,7 @@ ul {
 
 .benefits__tittle {
   font-weight: 800;
+
   font-size: 20px;
   line-height: 136%;
   letter-spacing: 0.03em;

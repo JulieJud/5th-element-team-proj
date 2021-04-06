@@ -423,6 +423,7 @@ li {
 .program-box {
   position: relative;
   margin-right: 0;
+  padding-bottom: 20px;
   @media screen and (min-width: 480px) and (max-width: 767px) {
     // margin-left: 73px;
   }
@@ -446,8 +447,11 @@ li {
 
   @media screen and (max-width: 479px) {
     width: 50%;
-    height: 50%;
+    height: 8%;
+    bottom: 0;
     background-size: contain;
+    background-image: url(/images/mainmobil.jpg);
+    background-position: right;
   }
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -456,6 +460,7 @@ li {
     height: 13%;
     transform: translateY(55%);
     background-size: cover;
+    background-image: url(/images/mainmobil.jpg);
   }
 
   @media screen and (min-width: 768px) {
@@ -464,6 +469,7 @@ li {
     height: 30%;
     width: 49%;
     transform: translateY(45%);
+    background-image: url(/images/maintablet.jpg);
   }
 
   @media screen and (min-width: 1280px) {
