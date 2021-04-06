@@ -422,7 +422,7 @@ li {
 
 .program-box {
   position: relative;
-  margin-right: 0;
+
   padding-bottom: 20px;
   @media screen and (min-width: 480px) and (max-width: 767px) {
     // margin-left: 73px;
@@ -441,7 +441,6 @@ li {
   position: absolute;
   // bottom: 0;
   right: 0;
-  background-image: url(/images/maindesktop.jpg);
 
   background-repeat: no-repeat;
 
@@ -452,6 +451,12 @@ li {
     background-size: contain;
     background-image: url(/images/mainmobil.jpg);
     background-position: right;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(/images/mainmobil@2x.jpg);
+    }
   }
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -461,6 +466,12 @@ li {
     transform: translateY(55%);
     background-size: cover;
     background-image: url(/images/mainmobil.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(/images/mainmobil@2x.jpg);
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -470,12 +481,25 @@ li {
     width: 49%;
     transform: translateY(45%);
     background-image: url(/images/maintablet.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(/images/maintablet@2x.jpg);
+    }
   }
 
   @media screen and (min-width: 1280px) {
+    background-image: url(/images/maindesktop.jpg);
     width: 45%;
-    height: 502px;
+    height: 430px;
     left: 0;
     transform: translateY(65%);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(/images/maindesktop@2x.jpg);
+    }
   }
 }
