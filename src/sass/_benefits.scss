@@ -4,7 +4,7 @@ ul {
 }
 
 .benefits {
-  padding: 50px 0;
+  padding: 0 0 50px;
   background-image: linear-gradient(to bottom, #111518 367px, #ffffff 367px, #ffffff 609px);
   background-size: cover;
   @media screen and (min-width: 768px) {
@@ -16,15 +16,18 @@ ul {
 }
 
 .benefits__tittle {
+  display: inline-block;
   font-weight: 800;
   font-size: 20px;
   line-height: 136%;
   letter-spacing: 0.03em;
   color: var(--white-color);
+  width: 150px;
 
   margin-bottom: 25px;
 
   @media screen and (min-width: 768px) {
+    width: 100%;
     font-size: 26px;
     line-height: 130%;
     text-align: center;
