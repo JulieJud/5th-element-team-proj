@@ -4,11 +4,12 @@ ul {
 }
 
 .benefits {
-  padding: 50px 0;
+  padding: 0 0 50px;
   background-image: linear-gradient(to bottom, #111518 367px, #ffffff 367px, #ffffff 609px);
   background-size: cover;
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(to bottom, #111518 260px, #ffffff 260px, #ffffff 460px);
+    padding-top: 0px;
   }
   @media screen and (min-width: 1280px) {
     background-image: linear-gradient(to bottom, #111518 254px, #ffffff 190px, #ffffff 317px);
@@ -21,7 +22,7 @@ ul {
   line-height: 136%;
   letter-spacing: 0.03em;
   color: var(--white-color);
-
+  width: 150px;
   margin-bottom: 25px;
 
   @media screen and (min-width: 768px) {
@@ -29,7 +30,9 @@ ul {
     line-height: 130%;
     text-align: center;
     letter-spacing: 0.03em;
+    width: 100%;
   }
+
   @media screen and (min-width: 1280px) {
     display: none;
   }
