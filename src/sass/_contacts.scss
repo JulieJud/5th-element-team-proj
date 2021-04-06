@@ -122,6 +122,13 @@
 }
 
 .contacts-input {
+  color: aliceblue;
+  &:valid {
+    border-color: green;
+  }
+  &:not(:placeholder-shown):required:invalid {
+    border-color: red;
+  }
   background-color: transparent;
   outline: none;
   border: 1px solid rgba(255, 255, 255, 1);
