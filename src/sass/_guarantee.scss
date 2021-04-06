@@ -1,9 +1,9 @@
 .guarantee {
-  background-color: var(--grey-section);
-  
+  background-color: var(--white-color);
+
 
   @media screen and (max-width: 767px) {
-  //  padding-top: 0;
+   padding-top: 0;
    padding-bottom: 50px;
   } 
 
@@ -17,6 +17,8 @@
     padding-bottom: 130px;
   }
 }
+
+
 
 .guarantee-title {
   color: var(--black-color);
@@ -89,6 +91,7 @@
     padding-bottom: 30px;
     padding-right: 50px;
     padding-left: 118px;
+   
 
     &::before {
       content: "";
@@ -106,16 +109,16 @@
     padding-top: 50px;
     padding-bottom: 45px;
     padding-right: 50px; 
-    padding-left: 112px;
+    padding-left: 150px;
 
     &::before {
       content: "";
-      height: 250px;
+      height: 280px;
       float: left;
-      border-left: dashed 1px;   
+      border-left: dashed 1px var(--main-light-text);   
       position: absolute;
-      left: 70px;
-      top: 83px;
+      left: 110px;
+      top: 86px;
     }
   }
   
@@ -124,13 +127,14 @@
 .guarantee-list__item {
   color: var(--main-dark-text);
   position: relative;
-
+ 
   @media screen and (max-width: 767px) {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 20px;
   margin-bottom: 18px;
+
 
 
   &::before {
