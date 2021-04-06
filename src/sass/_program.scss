@@ -1,5 +1,7 @@
-ul li {
+ul,
+li {
   list-style-type: none;
+  padding-inline-start: 0;
 }
 
 .program {
@@ -373,44 +375,60 @@ ul li {
     }
   }
 
-  .image-box {
-    position: relative;
-  }
+  // .image-box {
+  //   position: relative;
+  // }
 
-  @media screen and (max-width: 479px) {
-    .program-image {
-      position: absolute;
-      left: 200px;
-      top: -83px;
-      width: 176px;
-      height: 137px;
-    }
-  }
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    .program-image {
-      position: absolute;
-      width: 176px;
-      height: 137px;
-      left: 280px;
-      top: -83px;
-    }
-  }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    .program-image {
-      position: absolute;
-      width: 384px;
-      height: 280px;
-      left: 380px;
-      top: -200px;
-    }
-  }
-  @media screen and (min-width: 1280px) {
-    .program-image {
-      position: absolute;
-      width: 760px;
-      height: 502px;
-      left: -200px;
-      top: -125px;
-    }
+  // @media screen and (max-width: 479px) {
+  //   .program-image {
+  //     position: absolute;
+  //     left: 200px;
+  //     top: -83px;
+  //     width: 176px;
+  //     height: 137px;
+  //   }
+  // }
+  // @media screen and (min-width: 480px) and (max-width: 767px) {
+  //   .program-image {
+  //     position: absolute;
+  //     width: 176px;
+  //     height: 137px;
+  //     left: 280px;
+  //     top: -83px;
+  //   }
+  // }
+  // @media screen and (min-width: 768px) and (max-width: 1279px) {
+  //   .program-image {
+  //     position: absolute;
+  //     width: 384px;
+  //     height: 280px;
+  //     left: 380px;
+  //     top: -200px;
+  //   }
+  // }
+  // @media screen and (min-width: 1280px) {
+  //   .program-image {
+  //     position: absolute;
+  //     width: 760px;
+  //     height: 502px;
+  //     left: -200px;
+  //     top: -125px;
+  //   }
+  // }
+}
+
+.program-image::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-image: url(/images/maindesktop.jpg);
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    height: 280px;
+    transform: translate(20%, 50%);
   }
 }
