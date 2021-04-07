@@ -1,13 +1,20 @@
 .hero {
+  width: 100%;
+
+  background-image: url(../images/volna.png);
+  background-repeat: no-repeat;
+
   @media screen and(max-width: 767px) {
     padding-top: 50.47px;
     padding-bottom: 66.15px;
+    background-size: cover;
   }
 
   @media screen and(min-width: 768px) {
-    display: flex;
+    // display: flex;
     padding-top: 70px;
     padding-bottom: 92.5px;
+    background-size: cover;
   }
 
   @media screen and(min-width: 1280px) {
@@ -156,13 +163,13 @@
 }
 
 .hero__wave {
-  display: inline-block;
-  width: 100%;
-  background-size: cover;
+  display: flex;
+  // width: 100%;
+  // background-size: cover;
 
-  background-image: url(../images/volna.png);
-  background-repeat: no-repeat;
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../images/Volna@2x.png);
-  }
+  // background-image: url(../images/volna.png);
+  // background-repeat: no-repeat;
+  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   background-image: url(../images/Volna@2x.png);
+  // }
 }
